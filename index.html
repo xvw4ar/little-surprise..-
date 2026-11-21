@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b20">
+  <title>A little universe for you</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="space" aria-hidden="true">
+    <div class="star-layer star-layer-one"></div>
+    <div class="star-layer star-layer-two"></div>
+    <div class="planet planet-one"><span></span></div>
+    <div class="planet planet-two"><span></span></div>
+    <div class="planet planet-three"></div>
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+  </div>
+
+  <main class="site-shell">
+    <header class="topline">
+      <span>PRIVATE TRANSMISSION</span>
+      <span>23 NOV · FOR YOU</span>
+    </header>
+
+    <section id="home" class="page active">
+      <div class="eyebrow"><span class="tiny-star">✦</span> A MESSAGE FROM MY LITTLE UNIVERSE <span class="tiny-star">✧</span></div>
+      <div class="hero">
+        <p class="chapter">01 <span> / A LITTLE SURPRISE</span></p>
+        <h1>Let's go<br><em>somewhere</em><br>beautiful<span class="period">.</span></h1>
+        <p class="intro">I made a little something for you.<br>Before you open it, there's a song.</p>
+      </div>
+
+      <section class="music-panel">
+        <div class="music-meta">
+          <div>
+            <p class="micro-label">NOW PLAYING</p>
+            <h2>Can't Help Falling in Love</h2>
+            <p class="artist">Elvis Presley · a song for you</p>
+          </div>
+          <span class="sound-mark">♫</span>
+        </div>
+        <audio id="song" controls preload="metadata">
+          <source src="song.m4a" type="audio/mp4">
+          Your browser does not support audio.
+        </audio>
+        <label class="song-upload" for="songFile">ADD YOUR SONG FILE <span>＋</span></label>
+        <input id="songFile" type="file" accept="audio/*" hidden>
+        <p class="song-note">Take my hand, let's go to the moon together.</p>
+      </section>
+
+      <button class="main-button" id="openLetter">OPEN YOUR LETTER <span>↗</span></button>
+      <p class="footnote">PRESS PLAY FIRST · KEEP THE MUSIC WITH YOU</p>
+      <div class="transmission">TRANSMISSION RECEIVED <span>·</span> 23.11</div>
+    </section>
+
+    <section id="letter" class="page letter-page">
+      <div class="eyebrow"><span class="tiny-star">✦</span> A NOTE SENT ACROSS THE UNIVERSE <span class="tiny-star">✧</span></div>
+      <p class="chapter">02 <span> / JUST FOR YOU</span></p>
+      <h1 class="letter-title">To my favorite<br><em>person.</em></h1>
+      <p class="letter-subtitle">A little note, sent across the universe.</p>
+      <article class="letter-card">
+        <p class="salutation">To my favorite person,</p>
+        <p>On your birthday, I wish you years filled with happiness, surrounded by the people you love, a heart that never knows sadness, and days that are just as beautiful as your soul.</p>
+        <p>I hope I get to see you achieve all your dreams and reach the place you truly deserve. I'll always cheer you on, support you and your beautiful ideas, and I'll always be proud of every effort you make.</p>
+        <p>You're truly such a wonderful and special person to me. You have such a unique personality, and having you in my life gives me such a beautiful feeling.</p>
+        <p>I wanted to make you something small that would make you smile, just like you always manage to make me smile with all the little things and tiny details you do for me.</p>
+        <p>And finally, I want to tell you once again: happy birthday! I hope you enjoy your day and make beautiful memories, because today isn't just an ordinary day...</p>
+        <p>Today is special because it's the day the most special person in my life was born. 🖐🏻💕</p>
+        <p class="signature">With all my love ♡</p>
+      </article>
+      <p class="endline">END OF TRANSMISSION <span>✦</span> STILL UNDER THE SAME SKY <span>✦</span></p>
+      <button class="back-button" id="backHome">← BACK TO THE SONG</button>
+    </section>
+
+    <footer>MADE OF STARDUST <span>✦</span> JUST FOR YOU</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
